@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         val num2:EditText = findViewById(R.id.editTextNumber2)
         val boton1: Button = findViewById(R.id.button)
         val boton2: Button = findViewById(R.id.button2)
+        val boton3: Button = findViewById(R.id.button3)
+
         val res1:TextView = findViewById(R.id.textView)
 
         boton1.setOnClickListener {
@@ -29,6 +31,13 @@ class MainActivity : AppCompatActivity() {
             //res1.text = resultado.toString()
 
             res1.text = ((num1.text.toString().toInt()) - (num2.text.toString().toInt())).toString()
+
+        }
+        boton3.setOnClickListener {
+            //val resultado = (num1.text.toString().toInt()) + (num2.text.toString().toInt())
+            //res1.text = resultado.toString()
+
+            res1.text = ((num1.text.toString().toInt()) * (num2.text.toString().toInt())).toString()
 
         }
 
